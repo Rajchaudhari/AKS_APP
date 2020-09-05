@@ -1,7 +1,7 @@
-FROM docker.io/httpd
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN rm -f /usr/local/apache2/htdocs/index.html
-ONBUILD COPY ./index.html /usr/local/apache2/htdocs/
-ONBUILD COPY ./spectrumV.css /usr/local/apache2/htdocs/
+FROM docker.io/centos
+RUN yum update -y
+RUN yum install httpd -y
+#RUN rm -f /usr/local/apache2/htdocs/index.html
+COPY ./index.html /var/www/html
+COPY ./spectrumV.css /var/www/html
 CMD ["/sbin/httpd","-D", "FOREGROUND"]
