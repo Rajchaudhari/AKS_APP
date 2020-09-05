@@ -1,0 +1,29 @@
+h1{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.art{
+  margin: auto;
+}
+td{
+  background-color: black;
+  height: 300px;
+  width: 150px;
+  border: 6px solid white;
+}
+#data_one{
+  background-color: #011627;
+}
+#data_two{
+  background-color: #fdfffc;
+}
+#data_three{
+  background-color: #2ec4b6;
+}
+#data_four{
+  background-color: #e71d36;
+}
+#data_five{
+  background-color: #f2667d
+  /* #ff9f1c; */
+}
